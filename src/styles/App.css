@@ -2,7 +2,8 @@
   width: 60%;
   margin: auto;
   color: white;
-  height: 100%;
+  height: min-content;
+  padding-bottom: 5%;
 }
 
 .title{
@@ -11,6 +12,14 @@
 
 .main-content{
   padding: 0 5%;
+}
+
+.disclaimer-container{
+  padding: 0 5%;
+}
+.disclaimer a{
+  color: aquamarine;
+  font-size: .9em;
 }
 
 @media only screen and (max-width: 880px) {

@@ -20,11 +20,21 @@ const App = () => {
   return (
     <div className='app'>
       <h1 className='title'>Realtime Search Bar</h1>
-      <SearchBar
-        onSearchSubmit={term => onSearchSubmit(term)} />
+
+      <SearchBar onSearchSubmit={term => onSearchSubmit(term)} />
+
+      { renderedQuotes.length === 0 &&
+        <div className='disclaimer-container'>
+          <p className='disclaimer'>
+            <a href="https://github.com/AngeloFaella">Angelo Faella</a>
+          </p>
+        </div>
+      }
+
       <div className='main-content'>
         {renderedQuotes}
       </div>
+
     </div>
   );
 };
