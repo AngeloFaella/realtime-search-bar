@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import '../styles/SearchBar.css'
 
-const SearchBar = ({onSearchSubmit}) => {
+const SearchBar = ({onSearchSubmit, clearResults}) => {
     const [term, setTerm] = useState('');
     const [debouncedTerm, setDebouncedTerm] = useState(term);
 
@@ -17,7 +17,10 @@ const SearchBar = ({onSearchSubmit}) => {
         if(term !== ''){
             onSearchSubmit(term);
         }
-    }, [term, onSearchSubmit]);
+        else{
+            clearResults();
+        }
+    }, [term]);
 
     return (
       <div className='searchbar'>
