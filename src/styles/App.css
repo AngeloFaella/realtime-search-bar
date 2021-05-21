@@ -15,11 +15,13 @@
 }
 
 .disclaimer-container{
-  padding: 0 5%;
+  padding: 5% 5% 0 5%;
 }
-.disclaimer a{
-  color: aquamarine;
-  font-size: .9em;
+
+.no-results{
+  padding: 0 5%;
+  color: grey;
+  font-size: .8em;
 }
 
 @media only screen and (max-width: 880px) {
