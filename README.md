@@ -2,12 +2,9 @@
 
 Created as an example for the article "Realtime Search with React" (link to be added). 
 
-This project demonstrates how to create an optimized realtime search feature with React.
+This project demonstrates how to create an optimized and reusable real-time search feature with React Hooks using **debouncing** and **memoization** techniques.
 
-## Optimization
-There are two levels of optimization:
-- API calls
-- Results memoization
+A **live example** is available [here](https://angelofaella.github.io/realtime-search-bar).
 
 ## AnimeChan API
 The project make use of [AnimeChan](https://github.com/RocktimSaikia/anime-chan), a free restful API serving quality anime quotes.
@@ -18,6 +15,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+to run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Created with [`create-react-app`](https://github.com/facebook/create-react-app)
