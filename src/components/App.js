@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 
 import '../styles/App.css';
 import Quote from './Quote';
@@ -9,14 +9,14 @@ const App = () => {
   const [quotes, setQuotes] = useState([]);
   const [noResults, setNoResults] = useState(false);
 
-  const onSearchSubmit = useCallback(async term => {
+  const onSearchSubmit = async term => {
     console.log('New Search submit:', term);
-    const quotesArray = await requestQuotes(term);
+    const quotesArray = await requestQuotes(term.toLowerCase());
     setNoResults(quotesArray.length === 0);
     setQuotes(quotesArray);
-  });
+  };
 
-  const clearResults = useCallback(() => setQuotes([]));
+  const clearResults = () => setQuotes([]);
 
   const renderedQuotes = quotes.map((quote, i) => {
     return <Quote quote={quote} key={i} />
