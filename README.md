@@ -1,6 +1,6 @@
 # Optimized Realtime Search with React
 
-Created as an example for the article "Realtime Search with React" (link to be added). 
+Created for the tutorial ["*How to Create an Optimized Real-Time Search with React*"](https://javascript.plainenglish.io/how-to-create-an-optimized-real-time-search-with-react-6dd4026f4fa9). 
 
 This project demonstrates how to create an optimized and reusable real-time search feature with React Hooks using **debouncing** and **memoization** techniques.
 
